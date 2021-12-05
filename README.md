@@ -61,3 +61,5 @@ attendance system.
 
 
 ## 📝 Acknowledgements
+1. [To understand Haar-Cascade](https://towardsdatascience.com/face-detection-with-haar-cascade-727f68dafd08)
+2. Research papers provided.
