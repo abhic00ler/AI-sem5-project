@@ -24,7 +24,7 @@
   <a href="#-built-with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-acknowledgements">Acknowledgements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
-
+<img alt="Layout" src="screenshots/screenshot1.png">
 
 ### 👨🏻‍💻 About The Project
 The objective of this project is to develop face recognition based automated student
