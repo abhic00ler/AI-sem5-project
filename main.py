@@ -12,26 +12,30 @@ import datetime
 import time
 
 ############################################# FUNCTIONS ################################################
-
+    #This function Done by MIS : 111903014
+    #Name : Anant Mhaske
 def assure_path_exists(path):
     dir = os.path.dirname(path)
     if not os.path.exists(dir):
         os.makedirs(dir)
 
 ##################################################################################
-
+    #This function Done by MIS : 111903014
+    #Name : Anant Mhaske
 def tick():
     time_string = time.strftime('%H:%M:%S')
     clock.config(text=time_string)
     clock.after(200,tick)
 
 ###################################################################################
-
+    #This function Done by MIS : 111903014
+    #Name : Anant Mhaske
 def contact():
     mess._show(title='Contact us', message="Please contact us on : 'gaikwadad19.comp@coep.ac.in' ")
 
 ###################################################################################
-
+    #This function Done by MIS : 111903014
+    #Name : Anant Mhaske
 def check_haarcascadefile():
     exists = os.path.isfile("haarcascade_frontalface_default.xml")
     if exists:
@@ -41,7 +45,8 @@ def check_haarcascadefile():
         window.destroy()
 
 ###################################################################################
-
+    #This function Done by MIS :111903006 
+    #Name : Abhishek Gaikwad
 def save_pass():
     assure_path_exists("TrainingImageLabel/")
     exists1 = os.path.isfile("TrainingImageLabel\psd.txt")
@@ -75,7 +80,8 @@ def save_pass():
     master.destroy()
 
 ###################################################################################
-
+    #This function Done by MIS :111903006 
+    #Name : Abhishek Gaikwad
 def change_pass():
     global master
     master = tk.Tk()
@@ -105,7 +111,8 @@ def change_pass():
     master.mainloop()
 
 #####################################################################################
-
+    #This function Done by MIS :111903006 
+    #Name : Abhishek Gaikwad
 def psw():
     assure_path_exists("TrainingImageLabel/")
     exists1 = os.path.isfile("TrainingImageLabel\psd.txt")
@@ -130,7 +137,8 @@ def psw():
         mess._show(title='Wrong Password', message='You have entered wrong password')
 
 ######################################################################################
-
+    #This function Done by MIS : 111903014
+    #Name : Anant Mhaske
 def clear():
     txt.delete(0, 'end')
     res = "1)Take Images  >>>  2)Save Profile"
@@ -143,7 +151,8 @@ def clear2():
     message1.configure(text=res)
 
 #######################################################################################
-
+    #This function Done by MIS : 111903014
+    #Name : Anant Mhaske
 def TakeImages():
     check_haarcascadefile()
     columns = ['SERIAL NO.', '', 'ID', '', 'NAME']
@@ -205,7 +214,8 @@ def TakeImages():
             message.configure(text=res)
 
 ########################################################################################
-
+    #This function Done by MIS :111903006 
+    #Name : Abhishek Gaikwad
 def TrainImages():
     check_haarcascadefile()
     assure_path_exists("TrainingImageLabel/")
@@ -224,7 +234,8 @@ def TrainImages():
     message.configure(text='Total Registrations till now  : ' + str(ID[0]))
 
 ############################################################################################3
-
+    #This function Done by MIS : 111903014
+    #Name : Anant Mhaske
 def getImagesAndLabels(path):
     # get the path of all the files in the folder
     imagePaths = [os.path.join(path, f) for f in os.listdir(path)]
@@ -246,7 +257,8 @@ def getImagesAndLabels(path):
     return faces, Ids
 
 ###########################################################################################
-
+    #This function Done both MIS: 111903006 and MIS : 111903014
+    #Name : Abhishek Gaikwad and Anant Mhaske
 def TrackImages():
     check_haarcascadefile()
     assure_path_exists("Attendance/")
@@ -353,6 +365,8 @@ mont={'01':'January',
       }
 
 ######################################## GUI FRONT-END ###########################################
+    # All GUI Front-End is done by MIS : 111903017 
+    #Name : Aniket Warhade
 
 window = tk.Tk()
 window.geometry("1280x720")
