@@ -50,7 +50,7 @@ attendance system.
 #### Usage:
 1. Type in the terminal:
     ```sh
-    main.py
+    python3 main.py
     ```
     
 
@@ -62,4 +62,4 @@ attendance system.
 
 ## 📝 Acknowledgements
 1. [To understand Haar-Cascade](https://towardsdatascience.com/face-detection-with-haar-cascade-727f68dafd08)
-2. Research papers provided.
+2. [Research papers provided](https://github.com/abhic00ler/AI-sem5-project/tree/master/Research%20papers).
